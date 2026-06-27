@@ -2,9 +2,8 @@
 
 import useEmblaCarousel from 'embla-carousel-react';
 import {useCallback, useState} from 'react';
-import {Star, ChevronLeft, ChevronRight, PenLine} from 'lucide-react';
+import {Star, ChevronLeft, ChevronRight} from 'lucide-react';
 import {motion} from 'framer-motion';
-import {toast} from 'sonner';
 
 const reviews = [
   {name: 'أحمد عبد المجيد', nameEn: 'Ahmed Abdelmegid', relation: 'Parent', rating: 5, year: 'Grade 12', quoteAr: 'بنتي كانت بتخاف من العلوم وبعد ما بدأت مع مس ميرنا بقت عايزاه كل يوم. الدرجات اتحسنت جدًا وشكرًا لمس ميرنا على صبرها وشرحها الحلو.', quoteEn: 'My daughter used to fear science, but after starting with Mrs. Mirna she loves it. Her grades improved a lot.'},
@@ -16,7 +15,8 @@ const reviews = [
 ];
 
 export default function TestimonialsClient({labels, locale}: {labels: Record<string, string>; locale: string}) {
-  const [emblaRef, embla] = useEmblaCarousel({loop: true, align: 'start'});
+  const isRtl = locale === 'ar';
+  const [emblaRef, embla] = useEmblaCarousel({loop: true, align: 'start', direction: isRtl ? 'rtl' : 'ltr'});
   const [filter, setFilter] = useState('all');
   const scrollPrev = useCallback(() => embla?.scrollPrev(), [embla]);
   const scrollNext = useCallback(() => embla?.scrollNext(), [embla]);
@@ -30,9 +30,6 @@ export default function TestimonialsClient({labels, locale}: {labels: Record<str
             {f === 'all' ? labels.all : `${f} ${labels.stars}`}
           </button>
         ))}
-        <button onClick={() => toast.success(labels.reviewToast)} className="rounded-full bg-chemistry-teal px-4 py-2 text-xs font-bold text-white sm:px-5 sm:py-3 sm:text-sm">
-          <PenLine className="me-1.5 inline size-3 sm:me-2 sm:size-4" /> {labels.write}
-        </button>
       </div>
 
       <div className="overflow-hidden" ref={emblaRef}>
@@ -69,8 +66,8 @@ export default function TestimonialsClient({labels, locale}: {labels: Record<str
       </div>
 
       <div className="mt-6 flex justify-center gap-3 sm:mt-8">
-        <button onClick={scrollPrev} className="grid size-10 place-items-center rounded-full border border-slate-200 bg-white shadow-sm dark:border-slate-600 dark:bg-slate-800 sm:size-12"><ChevronLeft className="size-4 text-slate-700 dark:text-slate-300 sm:size-5" /></button>
-        <button onClick={scrollNext} className="grid size-10 place-items-center rounded-full border border-slate-200 bg-white shadow-sm dark:border-slate-600 dark:bg-slate-800 sm:size-12"><ChevronRight className="size-4 text-slate-700 dark:text-slate-300 sm:size-5" /></button>
+        <button onClick={isRtl ? scrollNext : scrollPrev} className="grid size-10 place-items-center rounded-full border border-slate-200 bg-white shadow-sm dark:border-slate-600 dark:bg-slate-800 sm:size-12">{isRtl ? <ChevronRight className="size-4 text-slate-700 dark:text-slate-300 sm:size-5" /> : <ChevronLeft className="size-4 text-slate-700 dark:text-slate-300 sm:size-5" />}</button>
+        <button onClick={isRtl ? scrollPrev : scrollNext} className="grid size-10 place-items-center rounded-full border border-slate-200 bg-white shadow-sm dark:border-slate-600 dark:bg-slate-800 sm:size-12">{isRtl ? <ChevronLeft className="size-4 text-slate-700 dark:text-slate-300 sm:size-5" /> : <ChevronRight className="size-4 text-slate-700 dark:text-slate-300 sm:size-5" />}</button>
       </div>
     </>
   );
