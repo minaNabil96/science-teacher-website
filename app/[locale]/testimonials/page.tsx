@@ -16,7 +16,7 @@ export default async function TestimonialsPage({params}: {params: {locale: strin
         <div className="mx-auto mb-8 w-fit rounded-full bg-chemistry-orange/10 px-5 py-3 font-black text-chemistry-orange">
           {t('badge')}
         </div>
-        <TestimonialsClient labels={{
+        <TestimonialsClient locale={params.locale} labels={{
           all: t('all'),
           stars: t('stars'),
           write: t('write'),
