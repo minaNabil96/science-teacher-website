@@ -1,0 +1,193 @@
+{
+  "teacher": { "name": "Mrs. Mirna Nabil" },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "videos": "Videos",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "booking": "Book"
+  },
+  "hero": {
+    "badge": "Science made simple and enjoyable",
+    "welcome": "Welcome to Mrs. Mirna Nabil, science becomes fun with her!",
+    "subtitle": "Since 2008, helping students excel in science with clear plans, simple explanations, and real follow-up.",
+    "book": "Book a Lesson",
+    "about": "Get to Know Me",
+    "teacherAlt": "Science teacher"
+  },
+  "home": {
+    "stats": {
+      "years": "Years of experience",
+      "students": "Students taught",
+      "success": "Satisfaction and success"
+    },
+    "whyEyebrow": "Why choose us?",
+    "whyTitle": "Professional science teaching with a friendly student-first approach",
+    "whySubtitle": "We combine conceptual understanding, practical examples, and continuous follow-up.",
+    "features": {
+      "lab": "Experiments and examples",
+      "labText": "Concepts are explained through experiments, diagrams, and simple models.",
+      "method": "Organized methodology",
+      "methodText": "Study plans, homework, short quizzes, and structured revision.",
+      "follow": "Parent follow-up",
+      "followText": "Progress reports and clear communication with parents."
+    },
+    "ctaEyebrow": "Start now",
+    "ctaTitle": "Want your child to love science and score higher?",
+    "ctaText": "Book a trial lesson and discover a clear teaching style tailored to the student level.",
+    "ctaBook": "Book now",
+    "ctaReviews": "See reviews",
+    "ctaCards": {
+      "0": "Strong final revision",
+      "1": "Limited groups",
+      "2": "Practical applications",
+      "3": "Plan for every student"
+    }
+  },
+  "about": {
+    "eyebrow": "Professional journey",
+    "title": "About Mrs. Mirna Nabil",
+    "subtitle": "A science teacher with long experience simplifying hard concepts into clear steps.",
+    "stats": {
+      "years": "Years experience",
+      "students": "Students",
+      "certificates": "Certificates"
+    },
+    "bioTitle": "A teaching journey since 2008",
+    "bioText": "I have worked with thousands of students at different levels, always focusing on understanding before memorization.",
+    "timeline": {
+      "0": {"title": "Started teaching", "text": "Began teaching high-school science using a simplified style."},
+      "1": {"title": "Developed experiments", "text": "Added models, experiments, and visual diagrams to lessons."},
+      "2": {"title": "Educational partnerships", "text": "Worked with learning centers and educational institutions."},
+      "3": {"title": "Modern platform", "text": "Expanded booking, follow-up, and educational video services."}
+    },
+    "philosophy": {
+      "title": "Teaching philosophy",
+      "subtitle": "Understanding, practice, and follow-up are the foundation of excellence.",
+      "cards": {
+        "0": {"title": "Understand before memorizing", "text": "We explain the reason behind each rule and reaction."},
+        "1": {"title": "Practical learning", "text": "Real-life examples and experiments make science clear."},
+        "2": {"title": "Continuous support", "text": "We follow up with students and parents step by step."}
+      }
+    },
+    "certTitle": "Certifications and achievements",
+    "certs": {
+      "0": "Modern teaching methods",
+      "1": "Lab safety training",
+      "2": "Top student awards",
+      "3": "Question bank creation",
+      "4": "Final revision programs",
+      "5": "E-learning training",
+      "6": "Interactive education",
+      "7": "Curriculum development"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Memories and photos",
+    "title": "Photo Gallery",
+    "subtitle": "Moments from classes, lab sessions, events, and student success.",
+    "filters": {
+      "all": "All",
+      "classroom": "Classroom",
+      "lab": "Lab",
+      "events": "Events",
+      "success": "Student Success"
+    },
+    "download": "Download",
+    "share": "Share",
+    "shared": "Sharing prepared"
+  },
+  "videos": {
+    "eyebrow": "Watch the teaching",
+    "title": "Introduction and learning videos",
+    "subtitle": "Explore the teaching approach, success stories, and course previews.",
+    "featured": "Featured video",
+    "topics": {
+      "0": "Sample lesson preview",
+      "1": "Teaching approach",
+      "2": "Student success story",
+      "3": "General science intro",
+      "4": "Revision course preview"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Trusted by parents",
+    "title": "Real reviews and experiences",
+    "subtitle": "Words from parents and students who noticed a clear difference in understanding and grades.",
+    "badge": "300+ positive reviews",
+    "all": "All reviews",
+    "stars": "stars",
+    "write": "Write a Review",
+    "reviewToast": "Review form will be available soon"
+  },
+  "contact": {
+    "eyebrow": "Reach us easily",
+    "title": "Contact Us",
+    "subtitle": "Choose your preferred channel or fill out the form and we will reply quickly.",
+    "phone": "Phone call",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Ready booking message",
+    "email": "Email",
+    "location": "Location",
+    "address": "Cairo, Egypt",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "grade": "Student grade",
+      "subject": "Subject",
+      "message": "Message",
+      "file": "Upload question/document",
+      "send": "Send",
+      "sending": "Sending...",
+      "success": "Message sent successfully",
+      "invalid": "Please enter valid data"
+    }
+  },
+  "booking": {
+    "eyebrow": "Book your lesson",
+    "title": "Booking System",
+    "subtitle": "Choose lesson type, date, time, and student details.",
+    "step1": "Type",
+    "step2": "Date",
+    "step3": "Time",
+    "step4": "Details",
+    "step5": "Confirm",
+    "chooseType": "Choose lesson type",
+    "chooseDate": "Choose date",
+    "chooseTime": "Choose time",
+    "studentDetails": "Student details",
+    "confirm": "Confirm booking",
+    "individual": "Individual",
+    "group": "Group",
+    "online": "Online",
+    "inperson": "In-person",
+    "priceIndividual": "EGP 400",
+    "priceGroup": "EGP 180",
+    "priceOnline": "EGP 250",
+    "priceInperson": "EGP 300",
+    "next": "Next",
+    "back": "Back",
+    "studentName": "Student name",
+    "parentPhone": "Parent phone",
+    "grade": "Grade",
+    "notes": "Notes",
+    "typeLabel": "Lesson type",
+    "dateLabel": "Date",
+    "timeLabel": "Time",
+    "priceLabel": "Price",
+    "payment": "Payment can be cash or by agreement. Online payment gateway placeholder is ready.",
+    "confirmBooking": "Confirm booking",
+    "confirmed": "Booking confirmed. A confirmation message will be sent."
+  },
+  "footer": {
+    "description": "A professional science learning platform that helps students understand and excel.",
+    "links": "Quick links",
+    "about": "About",
+    "gallery": "Gallery",
+    "booking": "Booking",
+    "contact": "Contact"
+  }
+}

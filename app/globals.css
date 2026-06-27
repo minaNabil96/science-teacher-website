@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.dark body {
+  background: #020617;
+}
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+::selection {
+  background: #7c3aed;
+  color: white;
+}
+
+.chemistry-pattern {
+  background-image:
+    radial-gradient(circle at 20% 25%, rgba(20,184,166,.08) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 30%, rgba(124,58,237,.08) 0 2px, transparent 3px),
+    radial-gradient(circle at 35% 75%, rgba(249,115,22,.08) 0 2px, transparent 3px);
+  background-size: 110px 110px;
+}
+
+.dark .chemistry-pattern {
+  background-image:
+    radial-gradient(circle at 20% 25%, rgba(20,184,166,.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 30%, rgba(124,58,237,.30) 0 2px, transparent 3px),
+    radial-gradient(circle at 35% 75%, rgba(249,115,22,.30) 0 2px, transparent 3px);
+  background-size: 110px 110px;
+}
+
+.glass {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  backdrop-filter: blur(14px);
+}
+
+.dark .glass {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-chemistry-purple focus-visible:ring-offset-2;
+}
+
+.dark .focus-ring {
+  @apply focus-visible:ring-offset-slate-900;
+}
