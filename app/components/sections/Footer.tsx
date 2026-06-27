@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="mt-3 grid gap-2 text-sm text-slate-400 sm:mt-4 sm:gap-3 sm:text-base">
             <a className="flex items-center gap-2 transition hover:text-white" href="tel:+201001234567"><Phone size={16} /> +20 100 123 4567</a>
             <a className="flex items-center gap-2 break-all transition hover:text-white" href="mailto:teacher@example.com"><Mail size={16} /> teacher@example.com</a>
-            <p className="flex items-center gap-2"><MapPin size={16} /> Cairo, Egypt</p>
+            <p className="flex items-center gap-2"><MapPin size={16} /> Ismailia, Egypt</p>
           </div>
         </div>
       </div>

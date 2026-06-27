@@ -59,7 +59,7 @@ export default async function ContactPage({params}: {params: {locale: string}}) 
           title="Google map"
           className="h-full w-full border-0"
           loading="lazy"
-          src="https://maps.google.com/maps?q=Cairo%20Egypt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=Ismailia%20Egypt&t=&z=13&ie=UTF8&iwloc=&output=embed"
         />
       </section>
     </main>
